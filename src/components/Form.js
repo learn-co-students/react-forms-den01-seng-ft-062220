@@ -6,15 +6,15 @@ class Form extends React.Component {
     lastName: "Henry"
   }
 
-  handleFirstNameChange = event => {
+  handleFirstNameChange = ({ target: { value }}) => {
     this.setState({
-      firstName: event.target.value
+      firstName: value
     })
   }
 
-  handleLastNameChange = event => {
+  handleLastNameChange = ({ target: { value }}) => {
     this.setState({
-      lastName: event.target.value
+      lastName: value
     })
   }
 
